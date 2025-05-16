@@ -1,0 +1,30 @@
+\usepackage[twocolumn,columnsep=1cm,margin=2cm,includehead,includefoot]{geometry}
+
+\usepackage[most]{tcolorbox}
+\newtcolorbox{chunk}{colback=white,colframe=black,skin=bicolor,
+  boxrule=0.5pt,arc=0pt,left=6pt,right=6pt,bottom=4pt,middle=4pt,colbacklower=white!95!black}
+
+\renewcommand\maketitle{}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\makeatletter
+\fancyhead[L]{\large\@author}
+\fancyhead[C]{\large\@title}
+\fancyhead[R]{\large\@date}
+\makeatother
+
+\usepackage{unicode-math}
+\setmainfont{XCharter}
+\setmathfont{XCharter Math}
+\setmathfont{STIXTwoMath-Regular}[range={"2938,"2937}]
+\setmonofont{FiraMono}
+
+\lstset{basicstyle=\small\ttfamily}
+\lstset{prebreak=\raisebox{0ex}[0ex][0ex]
+        {\ensuremath{\cwrightarcarrow}}}
+\lstset{postbreak=\raisebox{0ex}[0ex][0ex]
+        {\ensuremath{\rightdowncurvedarrow}\space}}
+\lstset{breaklines=true, breakatwhitespace=true}
+\lstset{aboveskip=0pt,belowskip=0pt}
