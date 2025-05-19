@@ -5,5 +5,7 @@ Authors@R:
     person("Matheus", "Schuindt", email = "mschuindt@id.uff.br", role = c("aut", "cre"))
 License: LGPL (>= 3)
 Encoding: UTF-8
+Imports:
+    rmarkdown
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
