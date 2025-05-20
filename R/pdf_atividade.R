@@ -13,9 +13,9 @@
 #' }
 #' @export
 pdf_atividade <- function() {
-  output_format(
-    knitr = knitr_options(opts_chunk = list(dev = 'tikz', fig.dim = c(4, 4))),
-    pandoc = pandoc_options(
+  rmarkdown::output_format(
+    knitr = rmarkdown::knitr_options(opts_chunk = list(dev = 'tikz', fig.dim = c(4, 4))),
+    pandoc = rmarkdown::pandoc_options(
       to = "pdf",
       lua_filters = pkg_file("lua/tcolorbox.lua"),
       args = c("--include-in-header", pkg_file("latex/preamble.tex"),
